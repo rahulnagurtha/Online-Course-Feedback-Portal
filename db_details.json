@@ -1,0 +1,6 @@
+{
+	"db_host": "localhost",
+	"db_username": "devsquare",
+	"db_password": "hashdevsquare",
+	"privilages": "*"
+}

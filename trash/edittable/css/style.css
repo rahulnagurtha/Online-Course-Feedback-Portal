@@ -1,0 +1,136 @@
+
+	/*
+	* Add edit delete rows dynamically using jquery and php
+	* http://www.amitpatil.me/
+	*
+	* @version
+	* 2.0 (4/19/2014)
+	* 
+	* @copyright
+	* Copyright (C) 2014-2015 
+	*
+	* @Auther
+	* Amit Patil
+	* Maharashtra (India)
+	*
+	* @license
+	* This file is part of Add edit delete rows dynamically using jquery and php.
+	* 
+	* Add edit delete rows dynamically using jquery and php is freeware script. you can redistribute it and/or 
+	* modify it under the terms of the GNU Lesser General Public License as published by
+	* the Free Software Foundation, either version 3 of the License, or
+	* (at your option) any later version.
+	* 
+	* Add edit delete rows dynamically using jquery and php is distributed in the hope that it will be useful,
+	* but WITHOUT ANY WARRANTY; without even the implied warranty of
+	* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	* GNU General Public License for more details.
+	* 
+	* You should have received a copy of the GNU General Public License
+	* along with this script.  If not, see <http://www.gnu.org/copyleft/lesser.html>.
+	*/
+
+body{
+	font-family: verdana;
+	font-size: 12px;
+}
+
+.error{
+	border: 1px solid red !important;
+}
+.success{
+	border: 1px solid green !important;
+}
+
+.bordered {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 80%;    
+}
+.bordered img{
+	width: 24px;
+	height: 24px;
+}
+.bordered input, textarea{
+	border: 1px solid #999999;
+	border-radius: 3px;
+}
+.bordered input{
+	height: 20px;
+}
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered tr:hover {
+    /*background: #fbf8e9;*/
+    background: #feecd8;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+	vertical-align: top;
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
