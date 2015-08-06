@@ -1,1 +1,1 @@
-# Online-Course-Feedback-Portal
+Developed a generic web based course feedback system targeting universities and other educational institutions. The system is fully customizable and features a user friendly administrator panel, intuitive feedback forms and data visualization of the results.
